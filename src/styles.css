@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.tag {
+  background-color: lightgray;
+  font-size: 17px;
+  padding: 5px;
+  pointer-events: none;
+  margin: 7px;
+  display: inline-block;
+}
+
+.tag::after {
+  pointer-events: all;
+  content: "\00d7";
+  display: inline-block;
+  padding-left: 7px;
+  cursor: pointer;
+  color: lightsalmon;
+}
